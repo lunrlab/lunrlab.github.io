@@ -4,7 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LUNR Lab, Stony Brook</title>
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jumbotron.css"> -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+
+    <script type="text/javascript" src="bibtexjs.js" charset="utf-8"></script>
+    <bibtex src="test_yash.bib"></bibtex>
+    <style>
+        bibtex { display: none; }           
+        h1.header {margin-left:8px;}
+        h1.YEAR { font-size: 17px; font-weight: bold; display: inline; margin-left:8px;}
+    </style>
+
 </head>
 <body class="bg-gray-100">
     <header class="bg-blue-600 text-white p-4">
@@ -55,55 +69,58 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div class="bg-white p-4 rounded shadow">
                     <h4 class="text-lg font-semibold"><a href="https://harshtrivedi.me">Harsh Trivedi</a></h4>
-                    <!-- <p>PhD Student</p> -->
-                    <p>I work in NLP and AI. Specifically, I research on AI/language agents, multi-step reasoning, question answering. Currently, I am most excited about building (i) AI agents that can do complex tasks autonomously for you (e.g., across your app accounts), and (ii) virtual environments for their careful experimentation and evaluation (e.g., 🌎 <a href="https://appworld.dev">AppWorld</a>).</p>
+                    <p>I work on robust multi-step reasoning for question answering and AI agents. I focus on building methods to understand (i) how to evaluate models so that we know that they are employing reliable multi-step reasoning (e.g., taking all the steps of reasoning and not taking shortcuts or not hallucinating), and (ii) how to teach models the same. I have also dabbled with AI safety, and efficient NLP.</p>
+                    <p>Research: AI Agents, Question Answering, Multi-Step Reasoning, Robust Reasoning</p>
                 </div>
                 <div class="bg-white p-4 rounded shadow">
                     <h4 class="text-lg font-semibold"><a href="https://www3.cs.stonybrook.edu/~mkoupaee/">Mahnaz Koupaee</a></h4>
-                    <!-- <p>Masters Student</p> -->
                     <p>My research is in the field of Natural Language Processing, more specifically using Large Language Models (LLMs) as primitives to reason about events and model how real-life scenarios unfold. I’m also very much interested in abstractive text summarization, mainly towards more controllable, factual summary generation and automatic summary evaluation using LLMs.</p>
+                    <p>Research: Commonsense Reasoning, Text Summarization</p>
                 </div>
                 <div class="bg-white p-4 rounded shadow">
                     <h4 class="text-lg font-semibold"><a href="https://www.linkedin.com/in/xueying-bai-296aa712b/">Xueying Bai</a></h4>
-                    <!-- <p>Undergraduate Researcher</p> -->
-                    <p>Research: Robotics and AI</p>
+                    <p>My current research focuses on continual learning with pre-trained language models. My research interests generally lie in continual learning, transfer learning, and generalization.</p>
+                    <p>Research: Continual Learning, Machine Learning</p>
                 </div>
                 <div class="bg-white p-4 rounded shadow">
                     <h4 class="text-lg font-semibold"><a href="https://www.linkedin.com/in/sayontan-ghosh-81a60679/">Sayontan Ghosh</a></h4>
-                    <!-- <p>PhD Student</p> -->
-                    <p>Research: Deep Learning for Computer Vision</p>
+                    <p>My primary research focus is on evaluating LLMs for state-based reasoning in text media such as narratives, conversation, etc. Apart from this, I have also done some work on other applications of NLP such as text to video distillation for action anticipation, PEFT, multilingual retrieval, representation learning etc. I am always eager to discuss, learn, and collaborate on new and exciting topics in NLP and ML.</p>
+                    <p>Research: Commonsense Reasoning, Knowledge Distillation, Multilingual Text Retrieval, Representation Learning</p>
                 </div>
                 <div class="bg-white p-4 rounded shadow">
                     <h4 class="text-lg font-semibold"><a href="https://ykl7.github.io">Yash Kumar Lal</a></h4>
-                    <!-- <p>Masters Student</p> -->
                     <p>I work on implicit reasoning problems on diverse types of texts. Particularly, I focus on evaluating and improving the abilities of NLP models to answer why questions that elicit different aspects of reasoning on stories and plans. I am also interested in understanding how well large language models (LLMs) understand the social and personal aspects of reasoning expressed in language.</p>
+                    <p>Research: Human-Centric Planning, Commonsense Reasoning, Robust Reasoning</p>
                 </div>
                 <div class="bg-white p-4 rounded shadow">
                     <h4 class="text-lg font-semibold"><a href="https://www3.cs.stonybrook.edu/~nisoni/">Nikita Soni</a></h4>
-                    <!-- <p>Undergraduate Researcher</p> -->
-                    <p>My research interest lies in Human-Centered Natural Language Processing and enabling Language Modeling with the context of the human behind the language. The purpose of my research is to enable the growth of more empathy in an AI-future centric world, thereby augmenting humanity rather than detracting from it.</p>
+                    <p>Language is more than words, it expresses identities, psychologies, cultures and much more. My research goal is to build human-context-aware language models that capture the meaning of language within the context of its generators, aiming to endow NLP systems with robust generalization, personalization, and more human-like language understanding.</p>
+                    <p>Research: Human Language Models, Human Context in LLMs and NLP</p>
                 </div>
                 <div class="bg-white p-4 rounded shadow">
-                    <h4 class="text-lg font-semibold"><a href="https://www.linkedin.com/in/saqib-hasan-a4b326121/">Md. Saqib Hasan</a></h4>
-                    <!-- <p>Masters Student</p> -->
-                    <p>Research: Natural Language Processing</p>
+                    <h4 class="text-lg font-semibold"><a href="https://saqibhasan057.github.io/website/">Md. Saqib Hasan</a></h4>
+                    <p>My research focuses at the intersection of NLP and formal verification, and how each can benefit the other. My current projects involve using incorporating feedback for code verification systems to design and develop algorithms improve various aspects of LLM program synthesis such security of code generation.</p>
+                    <p>Research: Program Synthesis, Formal Verification, Alignment, Synthetic Distillation</p>
                 </div>
                 <div class="bg-white p-4 rounded shadow">
                     <h4 class="text-lg font-semibold"><a href="https://www.linkedin.com/in/pegah-alipoormolabashi-461b4914a/">Pegah Alipoormolabashi</a></h4>
-                    <!-- <p>Undergraduate Researcher</p> -->
-                    <p>Research: Robotics and AI</p>
+                    <p>I am interested in authorship attribution methods. I want to find out how reliable the existing authorship attribution methods are and how to evaluate them in an insightful way using more realistic data and better metrics.</p>
+                    <p>Research: Evaluating NLP models and Assessing Reliability</p>
                 </div>
             </div>
         </section>
 
-        <section id="publications" class="mb-8">
-            <h2 class="text-2xl font-bold mb-4">Recent Publications</h2>
-            <ul class="bg-white p-4 rounded shadow list-disc list-inside">
+        <!-- <section id="publications" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Recent Publications</h2> -->
+            <!-- <ul class="bg-white p-4 rounded shadow list-disc list-inside">
                 <li class="mb-2">Doe, J., Smith, J., & Johnson, E. (2024). "Advances in Deep Learning for Natural Language Processing." Journal of Artificial Intelligence, 45(2), 112-128.</li>
                 <li class="mb-2">Brown, M., & Doe, J. (2023). "Robotic Navigation Using Reinforcement Learning." Proceedings of the International Conference on Robotics and Automation, 78-85.</li>
                 <li>Johnson, E., & Doe, J. (2023). "Sentiment Analysis in Social Media Using Transformer Models." Computational Linguistics, 31(4), 567-582.</li>
-            </ul>
-        </section>
+            </ul> -->
+            <!-- <div class="sort year" extra="ASC number">
+                <div class="templates"></div>
+            </div>
+        </section> -->
     </main>
 
     <footer class="bg-gray-200 p-4 mt-8 text-center">
