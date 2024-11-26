@@ -8,11 +8,15 @@
     <!-- <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jumbotron.css"> -->
+    <link rel="stylesheet" href="index.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <script type="text/javascript" src="bibtexjs.js" charset="utf-8"></script>
     <bibtex src="test_yash.bib"></bibtex>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
     <style>
         bibtex { display: none; }           
         h1.header {margin-left:8px;}
@@ -23,10 +27,27 @@
 <body class="bg-gray-100">
     <header class="bg-blue-600 text-white p-4">
         <h1 class="text-3xl font-bold">Language Understanding and Reasoning (LUNR)</h1>
-        <nav class="mt-4">
+        <!-- <nav class="mt-4">
             <a href="#pi" class="mr-4 hover:underline">Principal Investigator</a>
             <a href="#students" class="mr-4 hover:underline">PhD Students</a>
             <a href="#publications" class="hover:underline">Lab Publications</a>
+        </nav> -->
+        <nav class="nav-container">
+            <div class="main-nav">
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+        
+                <ul class="nav-links">
+                    <li><a href="#pi" class="nav-link">Principal Investigator</a></li>
+                    <li><a href="#students" class="nav-link">PhD Students</a></li>
+                    <li><a href="#publications" class="nav-link">Lab Publications</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
