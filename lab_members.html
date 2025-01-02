@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUNR Lab - Language Understanding and Reasoning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+        
+        .card {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+        }
+        
+        .card .rounded-circle {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="text-white p-4">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="images/LUNR.png" class="img-fluid rounded h-100 object-fit-cover">
+                    <h3 class="mb-0">Language Understanding and Reasoning (LUNR)</h3>
+                </div>
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="lab_members.html" class="nav-link active">Lab Members</a></li>
+                            <li class="nav-item"><a href="publications.html" class="nav-link">Publications</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section>
+            <h2 class="mb-4">Principal Investigator</h2>
+            <div class="row mb-5">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img src="images/Niranjan.jpg" 
+                                 class="rounded-circle border border-2"
+                                 alt="Profile Picture" 
+                                 style="width: 150px; height: 150px; object-fit: cover;">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title text-center"><a href="https://www3.cs.stonybrook.edu/~niranjan/" class="text-decoration-none">Niranjan Balasubramanian</a></h3>
+                            <p class="card-text text-center">Associate Professor, Computer Science, Stony Brook University</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4"></div>
+            </div>
+
+            <h2 class="mb-4">PhD Students</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img src="images/Harsh.jpg" 
+                                 class="rounded-circle border border-2"
+                                 alt="Profile Picture" 
+                                 style="width: 150px; height: 150px; object-fit: cover;">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><a href="https://harshtrivedi.me" class="text-decoration-none">Harsh Trivedi</a></h4>
+                            <p class="card-text text-center">I work on robust multi-step reasoning for question answering and AI agents. I focus on building methods to understand (i) how to evaluate models so that we know that they are employing reliable multi-step reasoning (e.g., taking all the steps of reasoning and not taking shortcuts or not hallucinating), and (ii) how to teach models the same. I have also dabbled with AI safety, and efficient NLP.</p>
+                            <p class="card-text"><small class="text-muted">Research: AI Agents, Question Answering, Multi-Step Reasoning, Robust Reasoning</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img src="images/Mahnaz.jpeg" 
+                                 class="rounded-circle border border-2"
+                                 alt="Profile Picture" 
+                                 style="width: 150px; height: 150px; object-fit: cover;">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><a href="https://www3.cs.stonybrook.edu/~mkoupaee/" class="text-decoration-none">Mahnaz Koupaee</a></h4>
+                            <p class="card-text text-center">My research is in the field of Natural Language Processing, more specifically using Large Language Models (LLMs) as primitives to reason about events and model how real-life scenarios unfold. I'm also very much interested in abstractive text summarization, mainly towards more controllable, factual summary generation and automatic summary evaluation using LLMs.</p>
+                            <p class="card-text"><small class="text-muted">Research: Commonsense Reasoning, Text Summarization</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img src="images/Xueying.jpeg" 
+                                 class="rounded-circle border border-2"
+                                 alt="Profile Picture" 
+                                 style="width: 150px; height: 150px; object-fit: cover;">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><a href="https://www.linkedin.com/in/xueying-bai-296aa712b/" class="text-decoration-none">Xueying Bai</a></h4>
+                            <p class="card-text text-center">My current research focuses on continual learning with pre-trained language models. My research interests generally lie in continual learning, transfer learning, and generalization.</p>
+                            <p class="card-text"><small class="text-muted">Research: Continual Learning, Machine Learning</small></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img src="images/Sayontan.jpeg" 
+                                 class="rounded-circle border border-2"
+                                 alt="Profile Picture" 
+                                 style="width: 150px; height: 150px; object-fit: cover;">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><a href="https://www.linkedin.com/in/sayontan-ghosh-81a60679/" class="text-decoration-none">Sayontan Ghosh</a></h4>
+                            <p class="card-text text-center">My primary research focus is on evaluating LLMs for state-based reasoning in text media such as narratives, conversation, etc. Apart from this, I have also done some work on other applications of NLP such as text to video distillation for action anticipation, PEFT, multilingual retrieval, representation learning etc.</p>
+                            <p class="card-text"><small class="text-muted">Research: Commonsense Reasoning, Knowledge Distillation, Multilingual Text Retrieval, Representation Learning</small></p>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img src="images/Yash.png" 
+                                 class="rounded-circle border border-2"
+                                 alt="Profile Picture" 
+                                 style="width: 150px; height: 150px; object-fit: cover;">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><a href="https://ykl7.github.io" class="text-decoration-none">Yash Kumar Lal</a></h4>
+                            <p class="card-text text-center">I work on implicit reasoning problems on diverse types of texts. Particularly, I focus on evaluating and improving the abilities of NLP models to answer why questions that elicit different aspects of reasoning on stories and plans. I am also interested in understanding how well large language models (LLMs) understand the social and personal aspects of reasoning expressed in language.</p>
+                            <p class="card-text"><small class="text-muted">Research: Human-Centric Planning, Commonsense Reasoning, Robust Reasoning</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img src="images/Nikita.jpg" 
+                                 class="rounded-circle border border-2"
+                                 alt="Profile Picture" 
+                                 style="width: 150px; height: 150px; object-fit: cover;">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><a href="https://www3.cs.stonybrook.edu/~nisoni/" class="text-decoration-none">Nikita Soni</a></h4>
+                            <p class="card-text text-center">Language is more than words, it expresses identities, psychologies, cultures and much more. My research goal is to build human-context-aware language models that capture the meaning of language within the context of its generators, aiming to endow NLP systems with robust generalization, personalization, and more human-like language understanding.</p>
+                            <p class="card-text"><small class="text-muted">Research: Human Language Models, Human Context in LLMs and NLP</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img src="images/Saqib.jpg" 
+                                 class="rounded-circle border border-2"
+                                 alt="Profile Picture" 
+                                 style="width: 150px; height: 150px; object-fit: cover;">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><a href="https://saqibhasan057.github.io/website/" class="text-decoration-none">Md. Saqib Hasan</a></h4>
+                            <p class="card-text text-center">My research focuses at the intersection of NLP and formal verification, and how each can benefit the other. My current projects involve using incorporating feedback for code verification systems to design and develop algorithms improve various aspects of LLM program synthesis such security of code generation.</p>
+                            <p class="card-text"><small class="text-muted">Research: Program Synthesis, Formal Verification, Alignment, Synthetic Distillation</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <div class="d-flex justify-content-center mb-3">
+                            <img src="images/Pegah.jpeg" 
+                                 class="rounded-circle border border-2"
+                                 alt="Profile Picture" 
+                                 style="width: 150px; height: 150px; object-fit: cover;">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title text-center"><a href="https://www.linkedin.com/in/pegah-alipoormolabashi-461b4914a/" class="text-decoration-none">Pegah Alipoormolabashi</a></h4>
+                            <p class="card-text text-center">I am interested in authorship attribution methods. I want to find out how reliable the existing authorship attribution methods are and how to evaluate them in an insightful way using more realistic data and better metrics.</p>
+                            <p class="card-text"><small class="text-muted">Research: Evaluating NLP models and Assessing Reliability</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            </br>
+
+            <div class="past-students">
+                <h2 class="mb-4">Past PhD Students</h2>
+                <div class="alumni-grid">
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/sayontan-ghosh-81a60679/">Sayontan Ghosh</a></div>
+                            <div class="current-position">
+                                Applied Scientist @ Amazon
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/mohadeseh-bastan/">Mohadesseh Bastan</a></div>
+                            <div class="current-position">
+                                Research SDE @ Microsoft
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/qqcao/">Qingqing Cao</a></div>
+                            <div class="current-position">
+                                Research Scientist @ Apple AIML
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/jun-seok-kang/">Jun Seok Kang</a></div>
+                            <div class="current-position">
+                                Senior Software Engineer @ Blink Health
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/heeyoung-kwon-9b1b6b2a/">Heeyoung Kwon</a></div>
+                            <div class="current-position">
+                                Research Scientist @ Meta
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/veronica-lynn-06613748/">Veronica Lynn</a></div>
+                            <div class="current-position">
+                                Research Scientist @ Meta
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 LUNR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
