@@ -82,6 +82,18 @@ header {
         text-align: center;
         margin: 0.2rem 0;
     }
+
+    .img-fluid {
+        max-height: 250px;
+    }
+    
+    .card .img-fluid {
+        max-height: 300px;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
 }
 
 .card {
@@ -250,19 +262,20 @@ body {
     margin-bottom: 1rem;
 }
 
-@media (max-width: 991px) {
-    .img-fluid {
-        max-height: 250px;
-    }
-    
-    .card .img-fluid {
-        max-height: 300px;
-    }
-}
-
 .logo-section {
     padding-right: 2rem;
     display: flex;
     align-items: center;
     gap: 1rem;  /* Creates space between the image and text */
+}
+
+.lab-info {
+    flex: 1;
+}
+
+.contact-info {
+    color: rgba(255,255,255,0.9);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-top: 0.25rem;
 }
