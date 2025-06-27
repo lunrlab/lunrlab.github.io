@@ -26,7 +26,7 @@ First, use Google Scholar's export all citations button as part of the "Cite" me
 Then, run the following command to process the `.bib` file:
 
 ```bash
-python parse_bib_file.py --bibfile raw_nb_scholar.bib --output_file nb_scholar.bib
+python process_bib_file.py --bibfile raw_nb_scholar.bib --output_file nb_scholar.bib
 ```
 
 If there are bib-related errors (such as duplicate entries), they will be pointed out one by one on this script run and need to be fixed in the original bibfile, before the output file can be generated.
