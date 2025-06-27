@@ -30,3 +30,4 @@ python process_bib_file.py --bibfile raw_nb_scholar.bib --output_file nb_scholar
 ```
 
 If there are bib-related errors (such as duplicate entries), they will be pointed out one by one on this script run and need to be fixed in the original bibfile, before the output file can be generated.
+Make sure to check the output bib file and remove any LaTeX/Markdown formatting (e.g., see @ghosh2025texttt entry).
