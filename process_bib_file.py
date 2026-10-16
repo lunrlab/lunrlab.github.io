@@ -12,12 +12,12 @@ def argument_parser():
 def main(args):
     raw_contents = load_bib(args.bibfile)
 
-    sbu_start_year = 2016
+    start_year = 2020
 
     filtered_contents = []
     for entry in raw_contents.entries.values():
         try:
-            if int(entry.fields['year']) < sbu_start_year:
+            if int(entry.fields['year']) < start_year:
                 continue
         except:
             # in case year is not listed in the record

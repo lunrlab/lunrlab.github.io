@@ -2,204 +2,166 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Meet the researchers and alumni of the Language Understanding and Reasoning Lab at Stony Brook University.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUNR Lab - Language Understanding and Reasoning</title>
+    <title>People — LUNR Lab · Stony Brook University</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f5f5f5;
-        }
-        
-        .card {
-            border: 1px solid #dee2e6;
-            border-radius: 8px;
-        }
-        
-        .card .rounded-circle {
-            margin-top: 20px;
-        }
-    </style>
 </head>
-<body>
-    <header class="text-white p-4">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo-section">
-                    <img src="images/LUNR.png" class="img-fluid rounded h-100 object-fit-cover">
-                    <div class="lab-info">
-                        <h3 class="mb-0">Language Understanding and Reasoning (LUNR)</h3>
-                        <p class="contact-info mb-0">Address: New Computer Science 244, Stony Brook University</p>
-                        <p class="contact-info mb-0">Contact: (631) 632-2457</p>
-                    </div>
-                    <!-- <h3 class="mb-0">Language Understanding and Reasoning (LUNR)</h3> -->
-                </div>
-                <nav class="navbar navbar-expand-lg">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                            <li class="nav-item"><a href="people.html" class="nav-link active">People</a></li>
-                            <li class="nav-item"><a href="publications.html" class="nav-link">Publications</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+<body class="people-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" id="top">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="LUNR Lab home">
+                <img src="images/LUNR.png" alt="LUNR" width="160" height="95">
+                <span class="brand-name">Language Understanding<br>&amp; Reasoning Lab</span>
+            </a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="people.html" class="active" aria-current="page">People</a>
+                <a href="publications.html">Publications</a>
+            </nav>
         </div>
     </header>
 
-    <main class="container my-5">
+    <main class="container" id="main-content">
+        <h1 class="visually-hidden">People</h1>
         <section>
-            <h2 class="mb-4">Principal Investigator</h2>
-            <div class="row mb-5">
-                <div class="col-4"></div>
-                <div class="col-4">
-                    <div class="card h-100 shadow-sm">
-                        <div class="d-flex justify-content-center mb-3">
-                            <img src="images/Niranjan.jpg" 
-                                 class="rounded-circle border border-2"
-                                 alt="Profile Picture" 
-                                 style="width: 150px; height: 150px; object-fit: cover;">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title text-center"><a href="https://www3.cs.stonybrook.edu/~niranjan/" class="text-decoration-none">Niranjan Balasubramanian</a></h3>
-                            <p class="card-text text-center">Associate Professor, Computer Science</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4"></div>
+            <div class="section-heading"><h2 id="principal-investigator">Principal Investigator</h2></div>
+            <div class="pi-card">
+                <img src="images/Niranjan.jpg" class="rounded-circle" width="150" height="150" alt="Niranjan Balasubramanian">
+                <div><h3><a href="https://www3.cs.stonybrook.edu/~niranjan/">Niranjan Balasubramanian <span aria-hidden="true">↗</span></a></h3><p>Associate Professor, Computer Science</p><span class="pi-affiliation">Stony Brook University</span></div>
             </div>
 
-            <h2 class="mb-4">PhD Students</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="section-heading"><h2 id="current-phd">Current PhD Students</h2></div>
+            <div class="row row-cols-1 row-cols-xl-2 g-4 member-grid">
                 <div class="col">
-                    <div class="card h-100 shadow-sm">
-                        <div class="d-flex justify-content-center mb-3">
-                            <img src="images/Xueying.jpeg" 
-                                 class="rounded-circle border border-2"
-                                 alt="Profile Picture" 
-                                 style="width: 150px; height: 150px; object-fit: cover;">
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <img src="images/Xueying.jpeg"
+                                 class="member-portrait" loading="lazy"
+                                 alt="Xueying Bai"
+                                 width="150" height="150">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title text-center"><a href="https://www.linkedin.com/in/xueying-bai-296aa712b/" class="text-decoration-none">Xueying Bai</a></h4>
-                            <p class="card-text text-center">My current research focuses on continual learning with pre-trained language models. My research interests generally lie in continual learning, transfer learning, and generalization.</p>
-                            <p class="card-text"><small class="text-muted">Research: Continual Learning, Machine Learning</small></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col">
-                    <div class="card h-100 shadow-sm">
-                        <div class="d-flex justify-content-center mb-3">
-                            <img src="images/Nikita.jpg" 
-                                 class="rounded-circle border border-2"
-                                 alt="Profile Picture" 
-                                 style="width: 150px; height: 150px; object-fit: cover;">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title text-center"><a href="https://www3.cs.stonybrook.edu/~nisoni/" class="text-decoration-none">Nikita Soni</a></h4>
-                            <p class="card-text text-center">Language is more than words, it expresses identities, psychologies, cultures and much more. My research goal is to build human-context-aware language models that capture the meaning of language within the context of its generators, aiming to endow NLP systems with robust generalization, personalization, and more human-like language understanding.</p>
-                            <p class="card-text"><small class="text-muted">Research: Human Language Models, Human Context in LLMs and NLP</small></p>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="col">
-                    <div class="card h-100 shadow-sm">
-                        <div class="d-flex justify-content-center mb-3">
-                            <img src="images/Saqib.jpg" 
-                                 class="rounded-circle border border-2"
-                                 alt="Profile Picture" 
-                                 style="width: 150px; height: 150px; object-fit: cover;">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title text-center"><a href="https://saqibhasan057.github.io/website/" class="text-decoration-none">Md. Saqib Hasan</a></h4>
-                            <p class="card-text text-center">My research focuses at the intersection of NLP and formal verification, and how each can benefit the other. My current projects involve using incorporating feedback for code verification systems to design and develop algorithms improve various aspects of LLM program synthesis such security of code generation.</p>
-                            <p class="card-text"><small class="text-muted">Research: Program Synthesis, Formal Verification, Alignment, Synthetic Distillation</small></p>
+                            <h3 class="card-title"><a href="https://www.linkedin.com/in/xueying-bai-296aa712b/">Xueying Bai</a></h3>
+                            <p class="card-text">My current research focuses on continual learning with pre-trained language models. My research interests generally lie in continual learning, transfer learning, and generalization.</p>
+                            <p class="research-interests"><small>Research: Continual Learning, Machine Learning</small></p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 shadow-sm">
-                        <div class="d-flex justify-content-center mb-3">
-                            <img src="images/Pegah.jpg" 
-                                 class="rounded-circle border border-2"
-                                 alt="Profile Picture" 
-                                 style="width: 150px; height: 150px; object-fit: cover;">
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <img src="images/Saqib.jpg"
+                                 class="member-portrait" loading="lazy"
+                                 alt="Md. Saqib Hasan"
+                                 width="150" height="150">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title text-center"><a href="https://www.linkedin.com/in/pegah-alipoormolabashi-461b4914a/" class="text-decoration-none">Pegah Alipoormolabashi</a></h4>
-                            <p class="card-text text-center">I study the reliability of large language models, currently focusing on how they assess their confidence. </p>
-                            <p class="card-text"><small class="text-muted">Research: LLM Reliability, Confidence</small></p>
+                            <h3 class="card-title"><a href="https://saqibhasan057.github.io/website/">Md. Saqib Hasan</a></h3>
+                            <p class="card-text">
+                                My research focuses on improving the coding abilities of Small Language Models (parameter count &lt; 100B). My current projects involve using synthetic data generation and post-training alignment to teach models how to utilize context and improve the security of generated code.</p>
+                            <p class="research-interests"><small>Research: Code Generation, Small Language Models, Synthetic Distillation, Post-training Alignment</small></p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 shadow-sm">
-                        <div class="d-flex justify-content-center mb-3">
-                            <img src="images/Bijoy.jpg" 
-                                 class="rounded-circle border border-2"
-                                 alt="Profile Picture" 
-                                 style="width: 150px; height: 150px; object-fit: cover;">
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <img src="images/Pegah.jpg"
+                                 class="member-portrait" loading="lazy"
+                                 alt="Pegah Alipoormolabashi"
+                                 width="150" height="150">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title text-center"><a href="https://bijoy-sust.github.io/" class="text-decoration-none">Biddut Sarker Bijoy</a></h4>
-                            <p class="card-text text-center">I focus on developing efficient, low-parameter agents for real-world applications, with a particular interest in enhancing the capabilities of large language models (LLMs) for complex reasoning and planning tasks. I am also interested in how LLMs can be refined to improve decision-making consistency and bridge the gap between language understanding and practical problem-solving.</p>
-                            <p class="card-text"><small class="text-muted">Research: Efficient Reasoning, Decision-Making in LLMs, Lightweight AI Agents</small></p>
+                            <h3 class="card-title"><a href="https://www.linkedin.com/in/pegah-alipoormolabashi-461b4914a/">Pegah Alipoormolabashi</a></h3>
+                            <p class="card-text">I study the reliability of large language models, currently focusing on how they assess their confidence. </p>
+                            <p class="research-interests"><small>Research: LLM Reliability, Confidence</small></p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 shadow-sm">
-                        <div class="d-flex justify-content-center mb-3">
-                            <img src="images/Dikshya.jpeg" 
-                                 class="rounded-circle border border-2"
-                                 alt="Profile Picture" 
-                                 style="width: 150px; height: 150px; object-fit: cover;">
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <img src="images/Bijoy.jpg"
+                                 class="member-portrait" loading="lazy"
+                                 alt="Biddut Sarker Bijoy"
+                                 width="150" height="150">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title text-center"><a href="https://www.linkedin.com/in/dikshyam/" class="text-decoration-none">Dikshya Mohanty</a></h4>
-                            <p class="card-text text-center">I work on human-centered NLP—the idea that natural language processing models can be improved by incorporating knowledge of who wrote the text. I’m also interested in how AI can be leveraged to enhance scientific discovery (AI for Science) and in understanding how media narratives shape public perception, particularly in the context of global crises (e.g., the Russia-Ukraine war).</p>
-                            <p class="card-text"><small class="text-muted">Research: Human-Centered NLP, AI for Science, AI for Society</small></p>
+                            <h3 class="card-title"><a href="https://bijoy-sust.github.io/">Biddut Sarker Bijoy</a></h3>
+                            <p class="card-text">I focus on developing efficient, low-parameter agents for real-world applications, with a particular interest in enhancing the capabilities of large language models (LLMs) for complex reasoning and planning tasks. I am also interested in how LLMs can be refined to improve decision-making consistency and bridge the gap between language understanding and practical problem-solving.</p>
+                            <p class="research-interests"><small>Research: Efficient Reasoning, Decision-Making in LLMs, Lightweight AI Agents</small></p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 shadow-sm">
-                        <div class="d-flex justify-content-center mb-3">
-                            <img src="images/Syed.JPG" 
-                                 class="rounded-circle border border-2"
-                                 alt="Profile Picture" 
-                                 style="width: 150px; height: 150px; object-fit: cover;">
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <img src="images/Dikshya.jpeg"
+                                 class="member-portrait" loading="lazy"
+                                 alt="Dikshya Mohanty"
+                                 width="150" height="150">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title text-center"><a href="https://dv66.github.io/" class="text-decoration-none">Syed Mostofa Monsur</a></h4>
-                            <p class="card-text text-center">I am working to improve the reasoning capabilities of LLMs to understand scientific text. I want to apply NLP/AI techniques to improve how these models interpret and reason over complex scientific literature. I am broadly interested in extending these techniques to assist scientific discoveries and support research innovation through AI models.</p>
-                            <p class="card-text"><small class="text-muted">Research: LLM Reasoning, Implicit Reasoning, Scientific Discovery</small></p>
+                            <h3 class="card-title"><a href="https://www.linkedin.com/in/dikshyam/">Dikshya Mohanty</a></h3>
+                            <p class="card-text">I work on human-centered NLP—the idea that natural language processing models can be improved by incorporating knowledge of who wrote the text. I’m also interested in how AI can be leveraged to enhance scientific discovery (AI for Science) and in understanding how media narratives shape public perception, particularly in the context of global crises (e.g., the Russia-Ukraine war).</p>
+                            <p class="research-interests"><small>Research: Human-Centered NLP, AI for Science, AI for Society</small></p>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col">
-                    <div class="card h-100 shadow-sm">
-                        <div class="d-flex justify-content-center mb-3">
-                            <img src="images/Youngwon.jpeg" 
-                                 class="rounded-circle border border-2"
-                                 alt="Profile Picture" 
-                                 style="width: 150px; height: 150px; object-fit: cover;">
+                <div class="col">
+                    <div class="member-card">
+                        <div class="member-photo">
+                            <img src="images/Syed.JPG"
+                                 class="member-portrait" loading="lazy"
+                                 alt="Syed Mostofa Monsur"
+                                 width="150" height="150">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title text-center"><a href="" class="text-decoration-none">Youngwon </a></h4>
-                            <p class="card-text text-center"></p>
-                            <p class="card-text"><small class="text-muted">Research: </small></p>
+                            <h3 class="card-title"><a href="https://dv66.github.io/">Syed Mostofa Monsur</a></h3>
+                            <p class="card-text">I am working to improve the reasoning capabilities of LLMs to understand scientific text. I want to apply NLP/AI techniques to improve how these models interpret and reason over complex scientific literature. I am broadly interested in extending these techniques to assist scientific discoveries and support research innovation through AI models.</p>
+                            <p class="research-interests"><small>Research: LLM Reasoning, Implicit Reasoning, Scientific Discovery</small></p>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
-            
-            </br>
+
+            <section class="current-masters" aria-labelledby="current-masters">
+                <div class="section-heading"><h2 id="current-masters">Current Masters Students</h2></div>
+                <div class="row row-cols-1 row-cols-md-2 g-4 member-grid">
+                    <div class="col">
+                        <div class="member-card">
+                            <div class="member-photo">
+                                <img src="images/Bhushan.png"
+                                     class="member-portrait" loading="lazy"
+                                     alt="Bhushan Shah"
+                                     width="150" height="150">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Bhushan Shah</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="member-card">
+                            <div class="member-photo">
+                                <img src="images/Wasiq.jpeg"
+                                     class="member-portrait" loading="lazy"
+                                     alt="Wasiq Malik"
+                                     width="150" height="150">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Wasiq Malik</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <div class="past-students">
-                <h2 class="mb-4">Past PhD Students</h2>
+                <div class="section-heading"><h2 id="past-phd">Past PhD Students</h2></div>
                 <div class="alumni-grid">
                     <div class="alumni-card">
                         <div class="alumni-info">
@@ -217,15 +179,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="alumni-card">
-                        <div class="alumni-info">
-                            <div class="alumni-name"><a href="https://ykl7.github.io">Yash Kumar Lal</a></div>
-                            <div class="current-position">
-                                Postdoctoral Scholar @ Ohio State University
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="alumni-card">
                         <div class="alumni-info">
                             <div class="alumni-name"><a href="https://www3.cs.stonybrook.edu/~mkoupaee/">Mahnaz Koupaee</a></div>
@@ -252,7 +205,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="alumni-card">
                         <div class="alumni-info">
                             <div class="alumni-name"><a href="https://www.linkedin.com/in/mohadeseh-bastan/">Mohadesseh Bastan</a></div>
@@ -261,7 +214,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="alumni-card">
                         <div class="alumni-info">
                             <div class="alumni-name"><a href="https://www.linkedin.com/in/qqcao/">Qingqing Cao</a></div>
@@ -270,7 +223,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="alumni-card">
                         <div class="alumni-info">
                             <div class="alumni-name"><a href="https://www.linkedin.com/in/jun-seok-kang/">Jun Seok Kang</a></div>
@@ -279,7 +232,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="alumni-card">
                         <div class="alumni-info">
                             <div class="alumni-name"><a href="https://www.linkedin.com/in/heeyoung-kwon-9b1b6b2a/">Heeyoung Kwon</a></div>
@@ -288,7 +241,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="alumni-card">
                         <div class="alumni-info">
                             <div class="alumni-name"><a href="https://www.linkedin.com/in/veronica-lynn-06613748/">Veronica Lynn</a></div>
@@ -300,15 +253,178 @@
                 </div>
             </div>
 
+            <div class="past-students">
+                <div class="section-heading"><h2 id="past-masters">Past Masters Students</h2></div>
+                <!-- Workplaces checked October 16, 2026 via linked LinkedIn profiles.
+                     Noah Weber: https://chmi.berkeley.edu/team (links to his LinkedIn profile). -->
+                <div class="alumni-grid">
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/yaswanthb-/">Yaswanth Reddy Bhuma</a></div>
+                            <div class="alumni-degree">MS in Data Science</div>
+                        </div>
+                    </div>
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/gautam-prakash/">Gautam Prakash</a></div>
+                            <div class="alumni-degree">MS</div>
+                        </div>
+                    </div>
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/dhrverma/">Dhruv Verma</a></div>
+                            <div class="alumni-degree">MS Thesis</div>
+                            <div class="current-position">Microsoft</div>
+                        </div>
+                    </div>
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/priyapande07/">Priya Pande</a></div>
+                            <div class="alumni-degree">MS Thesis</div>
+                            <div class="current-position">Google</div>
+                        </div>
+                    </div>
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/ben-paul-varghese-73568a229/">Ben Paul Varghese</a></div>
+                            <div class="alumni-degree">MS</div>
+                        </div>
+                    </div>
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/nikhil-goel1997/">Nikhil Goel</a></div>
+                            <div class="alumni-degree">MS</div>
+                        </div>
+                    </div>
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/tanviaggarwal97/">Tanvi Aggarwal</a></div>
+                            <div class="alumni-degree">MS Thesis</div>
+                            <div class="current-position">Software Engineer @ Ema</div>
+                        </div>
+                    </div>
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/bandham-manikanta/">Manikanta Bandham</a></div>
+                            <div class="alumni-degree">MS</div>
+                        </div>
+                    </div>
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/apoorvakashi/">Apoorva Kashi</a></div>
+                            <div class="alumni-degree">MS</div>
+                            <div class="current-position">Amazon Web Services (AWS)</div>
+                        </div>
+                    </div>
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/nishit-jain/">Nishit Jain</a></div>
+                            <div class="alumni-degree">MS</div>
+                            <div class="current-position">Jetro Restaurant Depot</div>
+                        </div>
+                    </div>
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/kashyap-s-majumdar/">Kashyap Majumdar</a></div>
+                            <div class="alumni-degree">MS</div>
+                        </div>
+                    </div>
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/sugam-devare/">Sugam Devare</a></div>
+                            <div class="alumni-degree">MS</div>
+                            <div class="current-position">NVIDIA</div>
+                        </div>
+                    </div>
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/rgaonkar">Radhika Gaonkar</a></div>
+                            <div class="alumni-degree">MS Thesis</div>
+                            <div class="current-position">Applied Researcher @ Prime Intellect</div>
+                        </div>
+                    </div>
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/leena-shekhar">Leena Shekhar</a></div>
+                            <div class="alumni-degree">MS Thesis</div>
+                            <div class="current-position">Applied Scientist @ Microsoft</div>
+                        </div>
+                    </div>
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/noah-weber-1a37a0a1/">Noah Weber</a></div>
+                            <div class="alumni-degree">MS</div>
+                            <div class="current-position">Advanced AI Engineer @ CHMI, UC Berkeley</div>
+                        </div>
+                    </div>
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://uk.linkedin.com/in/samuel-louvan-9151bb2">Samuel Louvan</a></div>
+                            <div class="alumni-degree">MS</div>
+                            <div class="current-position">Applied Scientist @ Amazon</div>
+                        </div>
+                    </div>
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/chetannagarajnaik">Chetan Naik</a></div>
+                            <div class="alumni-degree">MS Thesis</div>
+                            <div class="current-position">Microsoft</div>
+                        </div>
+                    </div>
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/arunankit">Ankit Arun</a></div>
+                            <div class="alumni-degree">MS</div>
+                            <div class="current-position">Research Engineer @ Meta</div>
+                        </div>
+                    </div>
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/shashank-jain-1376a924">Shashank Jain</a></div>
+                            <div class="alumni-degree">MS</div>
+                            <div class="current-position">Applied Research Scientist @ Meta</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="past-students">
+                <div class="section-heading"><h2 id="past-bachelors">Past Bachelors Students</h2></div>
+                <div class="alumni-grid">
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/anshumaanvsingh/">Anshumaan Singh</a></div>
+                            <div class="alumni-degree">BS</div>
+                            <div class="current-position">AI &amp; ML Engineering Intern @ BMO U.S. (Summer 2026)</div>
+                        </div>
+                    </div>
+                    <div class="alumni-card">
+                        <div class="alumni-info">
+                            <!-- Workplace checked October 16, 2026. LinkedIn lists her as Yuliya Caracciolo;
+                                 https://devpost.com/yastapova/likes confirms her Stony Brook degree. -->
+                            <div class="alumni-name"><a href="https://www.linkedin.com/in/ycaracciolo">Yuliya Astapova</a></div>
+                            <div class="alumni-degree">BS Honors Thesis</div>
+                            <div class="current-position">NYC Department of Education</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
 
-    <footer class="text-white py-4 mt-5">
-        <div class="container text-center">
-            <p class="mb-0">&copy; 2024 LUNR. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <span class="footer-wordmark">LUNR<span> / </span>Lab</span>
+                <p>Language Understanding and Reasoning<br>Stony Brook University, New York</p>
+            </div>
+            <div class="footer-contact">
+                <p>New Computer Science 244<br>Stony Brook University<br><a href="tel:+16316322457">(631) 632-2457</a></p>
+            </div>
         </div>
+        <div class="container footer-bottom"><span>&copy; 2026 LUNR Lab</span><a href="#top">Back to top ↑</a></div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

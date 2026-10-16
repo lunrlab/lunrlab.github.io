@@ -1,138 +1,95 @@
-<!DOCTYPE html> 
-<html xmlns="http://www.w3.org/1999/xhtml"> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Research publications from the LUNR Lab at Stony Brook University, from 2020 onward.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUNR Lab - Language Understanding and Reasoning</title>
+    <title>Publications — LUNR Lab · Stony Brook University</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="bibtex_js.js" type="text/javascript" charset="utf-8"></script>
-    <bibtex src="nb_scholar.bib"></bibtex>      
-    <script>
-        $(function() {
-            $("#Fontselector").on("change",function() {
-                var font = $("#Fontselector option:selected").text();
-                console.log(font);
-
-                $('.title.fonters').each(function() {
-                    $(this).css("font-family",font);
-                });
-            }); 
-        });
-        function reset() {
-            $("select").each(function () {
-                localStorage.setItem($(this).attr("id"),"");
-                $(this).val("");
-            }); 
-            $("#searchbar").val("");
-            $("#searchbar").trigger('change');
-        }
-    </script>
-
-    <style>
-        bibtex { display: none; }
-        h1.header {margin-left:8px;}
-        h1.YEAR { font-size: 17px; font-weight: bold; display: inline; margin-left:8px;}
-    </style>
 </head>
-<body>
-    <header class="text-white p-4">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo-section">
-                    <img src="images/LUNR.png" class="img-fluid rounded h-100 object-fit-cover">
-                    <div class="lab-info">
-                        <h3 class="mb-0">Language Understanding and Reasoning (LUNR)</h3>
-                        <p class="contact-info mb-0">Address: New Computer Science 244, Stony Brook University</p>
-                        <p class="contact-info mb-0">Contact: (631) 632-2457</p>
-                    </div>
-                </div>
-                
-                <nav class="navbar navbar-expand-lg">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                            <li class="nav-item"><a href="people.html" class="nav-link">People</a></li>
-                            <li class="nav-item"><a href="publications.html" class="nav-link active">Publications</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+<body class="publications-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" id="top">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="LUNR Lab home">
+                <img src="images/LUNR.png" alt="LUNR" width="160" height="95">
+                <span class="brand-name">Language Understanding<br>&amp; Reasoning Lab</span>
+            </a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="people.html">People</a>
+                <a href="publications.html" class="active" aria-current="page">Publications</a>
+            </nav>
         </div>
     </header>
 
-    <div class="bibtex_structure">
-        <div class="group year" extra="DESC number">
-            <div style="padding-bottom:10px;"></div>
-            <div class="sort journal" extra="DESC string">
-                <div class="templates"></div>
+    <main class="container" id="main-content">
+        <h1 class="visually-hidden">Publications</h1>
+        <div class="publication-toolbar">
+            <label for="publication-search">Find a publication</label>
+            <div class="search-field">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                    <circle cx="10" cy="10" r="6"/>
+                    <path d="m15 15 5 5"/>
+                </svg>
+                <input id="publication-search" type="search" placeholder="Search title, author, or venue…" autocomplete="off" aria-describedby="publication-status">
+                <button type="button" id="clear-search" hidden>Clear</button>
             </div>
         </div>
-    </div>
-
-    <div id="bibtex_display">
-    <div class="if bibtex_template" style="display: none;">
-        <div class="sort year" extra="DESC number">           
-        <ul> <li>
-            <!-- <span class="if journal !nolink">
-                <a class="bibtexVar" href="+URL+" extra="URL">
-                    <span style="text-decoration: underline;" class="title"></span>,
-                </a>
-            </span>
-            <span class="if title nolink">
-                    <span class="title"></span>,
-            </span> -->
-            <span class="title"></span>,
-            <div class="if author">
-                <span class="author">
-                    <span class="first"></span> <!-- <span class="first_initial"></span> -->
-                    <span class="von"></span>
-                    <span class="last"></span>
-                    <span class="junior"></span>
-                </span>
-            </div>
-            <div>
-                <span class="if journal"><em><span class="journal"></span></em>.</span>
-                <span class="if booktitle">In <em><span class="booktitle"></span></em>.</span>
-                <!-- <span class="if publisher"><em><span class="publisher"></span></em>,</span>
-                <span class="if editor"><span class="editor"></span> (editors),</span>
-                <span class="if !journal number">Technical report <span class="number"></span>,</span>
-                <span class="if institution"><span class="institution"></span>,</span>
-                <span class="if address"><span class="address"></span>,</span>
-                <span class="if volume"><span class="volume"></span>,</span>
-                <span class="if journal number">(<span class="number"></span>),</span>
-                <span class="if pages"> pages <span class="pages"></span>,</span>
-                <span class="if month"><span class="month"></span>,</span>
-                <span class="if year"><span class="year"></span>.</span>
-                <span class="if note"><span class="note"></span>.</span>
-                <a class="bibtexVar" role="button" data-toggle="collapse" href="#bib+BIBTEXKEY+" aria-expanded="false" aria-controls="bib+BIBTEXKEY+" extra="BIBTEXKEY">
-                    [bib]
-                </a> -->
-            </div>
-            <!-- <div class="bibtexVar collapse" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
-                <div class="well">
-                    <pre><span class="bibtexraw noread"></span></pre>           
+        <nav class="year-nav" aria-label="Publication years">
+            <div id="publication-years"></div>
+        </nav>
+        <p id="publication-status" class="publication-status" role="status">Loading publications…</p>
+        <bibtex src="nb_scholar.bib"></bibtex>
+        <div class="bibtex_structure">
+            <div class="group year" extra="DESC number">
+                <h2 class="year-heading"><span class="title"></span></h2>
+                <div class="sort sortdate" extra="DESC number">
+                    <div class="templates"></div>
                 </div>
             </div>
-            <div style="display:none"><span class="bibtextype"></span></div>
-            <div style="display:none"><span class="if topic"><span class="topic"></span></span></div> -->
-        </li>   </ul>
-    </div>
-    </div>
-    </div>
-
-    
-    <footer class="text-white py-4 mt-5">
-        <div class="container text-center">
-            <p class="mb-0">&copy; 2025 LUNR. All rights reserved.</p>
         </div>
-    </footer>
+        <div id="bibtex_display">
+            <article class="bibtex_template publication-entry" style="display: none;">
+                <h3>
+                    <a class="bibtexVar publication-title" href="+URL+" extra="URL">
+                        <span class="title"></span>
+                        <span class="paper-arrow" aria-hidden="true">↗</span>
+                    </a>
+                </h3>
+                <p class="publication-authors">
+                    <span class="if author"><span class="author"><span class="first"></span> <span class="von"></span> <span class="last"></span> <span class="junior"></span></span></span>
+                </p>
+                <p class="publication-venue">
+                    <span class="if journal"><span class="journal"></span></span>
+                    <span class="if booktitle"><span class="booktitle"></span></span>
+                </p>
+            </article>
+        </div>
+        <p class="search-empty" id="search-empty" hidden>No publications match your search. Try a different title, author, or venue.</p>
+        <noscript><p>Enable JavaScript to browse the publication list, or visit the Google Scholar profile below.</p></noscript>
+        <div class="publications-cutoff" id="earlier-work">
+            <p class="cutoff-dots" aria-label="Earlier publications omitted">&hellip;</p>
+            <p>For publications before 2020 and the complete list, visit <a href="https://scholar.google.com/citations?hl=en&amp;user=X3JCGVIAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Niranjan Balasubramanian’s Google Scholar page <span aria-hidden="true">↗</span></a></p>
+        </div>
+    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <span class="footer-wordmark">LUNR<span> / </span>Lab</span>
+                <p>Language Understanding and Reasoning<br>Stony Brook University, New York</p>
+            </div>
+            <div class="footer-contact">
+                <p>New Computer Science 244<br>Stony Brook University<br><a href="tel:+16316322457">(631) 632-2457</a></p>
+            </div>
+        </div>
+        <div class="container footer-bottom"><span>&copy; 2026 LUNR Lab</span><a href="#top">Back to top ↑</a></div>
+    </footer>
+    <script src="site.js" defer></script>
 </body>
 </html>
